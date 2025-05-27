@@ -37,4 +37,15 @@ const checkDuplicates = (name: string, products: { name: string }[]): boolean =>
   return products.some(product => product.name.trim().toLowerCase() === trimmedName);
 };
 
-export { validateName, validateAmount, checkDuplicates };
+const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>, setName: (value: string) => void) => {
+  setName(e.target.value);
+};
+
+const handleAmountChange = (e: React.ChangeEvent<HTMLInputElement>, setAmount: (value: string) => void) => {
+  const value = e.target.value;
+  if (AMOUNT_REGEX.test(value)) {
+    setAmount(value);
+  }
+};
+
+export { validateName, validateAmount, checkDuplicates, handleNameChange, handleAmountChange };

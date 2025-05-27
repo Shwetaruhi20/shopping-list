@@ -3,7 +3,7 @@ import { useAppDispatch } from "../hooks";
 import { removeProduct, updateProduct } from "../features/products/productsSlice";
 import "../style.css";
 import type { ProductItemProps } from "../types";
-import { validateName, validateAmount } from "../utils/productUtils";
+import { validateName, validateAmount, handleNameChange, handleAmountChange } from "../utils/productUtils";
 
 const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
   const dispatch = useAppDispatch();
@@ -48,7 +48,7 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
             <input
               type="text"
               value={editedName}
-              onChange={(e) => setEditedName(e.target.value)}
+              onChange={(e) => handleNameChange(e, setEditedName)}
               className={`${isEditing ? "productFormField" : ""}`}
             />
             {nameError && <div className="text-red-600 text-sm">{nameError}</div>}
@@ -63,12 +63,7 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
             <input
               type="text"
               value={editedAmount}
-              onChange={(e) => {
-                const value = e.target.value;
-                if (/^\d*\.?\d*$/.test(value)) {
-                  setEditedAmount(value);
-                }
-              }}
+              onChange={(e) => handleAmountChange(e, setEditedAmount)}
               className={`${isEditing ? "productFormField" : ""}`}
             />
             {amountError && <div className="text-red-600 text-sm">{amountError}</div>}

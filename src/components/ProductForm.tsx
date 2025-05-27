@@ -3,7 +3,7 @@ import { useAppDispatch, useAppSelector } from '../hooks';
 import { addProduct, updateProduct } from '../features/products/productsSlice';
 import '../style.css';
 import type { Props, Product } from '../types';
-import { validateName, validateAmount, checkDuplicates } from '../utils/productUtils';
+import { validateName, validateAmount, checkDuplicates, handleAmountChange, handleNameChange } from '../utils/productUtils';
 import type { RootState } from '../store/store';
 
 
@@ -62,7 +62,7 @@ const ProductForm: React.FC<Props> = ({ initialProduct }) => {
             type="text"
             placeholder="Product Name"
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            onChange={(e) => handleNameChange(e, setName)}
             className="productFormField w-full sm:w-auto"
           />
           {nameError && <span className="text-red-600 text-sm">{nameError}</span>}
@@ -72,12 +72,7 @@ const ProductForm: React.FC<Props> = ({ initialProduct }) => {
             type="text"
             placeholder="Amount (€)"
             value={amount}
-            onChange={(e) => {
-              const value = e.target.value;
-              if (/^\d*\.?\d*$/.test(value)) {
-                setAmount(value);
-              }
-            }}
+            onChange={(e) => handleAmountChange(e, setAmount)}
             className="productFormField w-full sm:w-auto"
           />
           {amountError && <span className="text-red-600 text-sm">{amountError}</span>}
