@@ -32,4 +32,9 @@ const validateAmount = (value: string): ValidationResult => {
   return [!error, error];
 };
 
-export { validateName, validateAmount };
+const checkDuplicates = (name: string, products: { name: string }[]): boolean => {
+  const trimmedName = name.trim().toLowerCase();
+  return products.some(product => product.name.trim().toLowerCase() === trimmedName);
+};
+
+export { validateName, validateAmount, checkDuplicates };

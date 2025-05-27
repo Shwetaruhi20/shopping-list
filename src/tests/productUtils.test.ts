@@ -1,4 +1,4 @@
-import { validateName,validateAmount } from '../utils/productUtils';
+import { validateName, validateAmount, checkDuplicates } from '../utils/productUtils';
 
 test('should return false for empty name', () => {
   const [isValid, error] = validateName('');
@@ -53,4 +53,16 @@ test('should return false for amount greater than 10000', () => {
   const [isValid, error] = validateAmount('10001');
   expect(isValid).toBe(false);
   expect(error).toBe('Amount must be less than 10,000');
+});
+
+test('should return true for duplicate product name', () => {
+  const products = [{id: "1", name: 'Product A', amount: 10 }, {id: "3", name: 'Product B', amount: 24 }];
+  const isDuplicate = checkDuplicates('Product A', products);
+  expect(isDuplicate).toBe(true);
+});
+
+test('should return false for unique product name', () => {
+  const products = [{id: "1", name: 'Product A', amount: 10 }, {id: "3", name: 'Product B', amount: 24 }];
+  const isDuplicate = checkDuplicates('Product C', products);
+  expect(isDuplicate).toBe(false);
 });

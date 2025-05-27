@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useAppDispatch } from '../hooks';
+import { useAppDispatch, useAppSelector } from '../hooks';
 import { addProduct, updateProduct } from '../features/products/productsSlice';
 import '../style.css';
 import type { Props, Product } from '../types';
-import { validateName, validateAmount } from '../utils/productUtils';
+import { validateName, validateAmount, checkDuplicates } from '../utils/productUtils';
+import type { RootState } from '../store/store';
+
 
 const ProductForm: React.FC<Props> = ({ initialProduct }) => {
   const [name, setName] = useState('');
@@ -11,6 +13,7 @@ const ProductForm: React.FC<Props> = ({ initialProduct }) => {
   const [nameError, setNameError] = useState('');
   const [amountError, setAmountError] = useState('');
   const dispatch = useAppDispatch();
+  const products = useAppSelector((state: RootState) => state.products);
 
   useEffect(() => {
     if (initialProduct) {
@@ -23,8 +26,10 @@ const ProductForm: React.FC<Props> = ({ initialProduct }) => {
     e.preventDefault();
     const [isNameValid, nameError] = validateName(name);
     const [isAmountValid, amountError] = validateAmount(amount);
-    if (!isNameValid || !isAmountValid) {
-      setNameError(nameError);
+    const isDuplicate = checkDuplicates(name, products)
+
+    if (!isNameValid || !isAmountValid || isDuplicate) {
+      setNameError(isDuplicate ? 'Product with this name already exists.' : nameError);
       setAmountError(amountError);
       return;
     }
