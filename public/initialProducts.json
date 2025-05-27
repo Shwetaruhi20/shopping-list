@@ -1,0 +1,53 @@
+[
+    {
+      "id": "1e4d2a88-8c3e-4b1e-a3b7-68d0a1b27d98",
+      "name": "Wireless Mouse",
+      "amount": 20
+    },
+    {
+      "id": "b2f4e676-2b84-4e2a-bc8b-b1d3c7304b36",
+      "name": "Bluetooth Headphones",
+      "amount": 100
+    },
+    {
+      "id": "d7e5907a-3e34-4ac1-9879-94b999e3dc1f",
+      "name": "Laptop Stand",
+      "amount": 140
+    },
+    {
+      "id": "9b1c3f5f-43f4-44cb-9b69-294fa06e55a9",
+      "name": "USB-C Hub",
+      "amount": 30
+    },
+    {
+      "id": "67e6c271-54e1-4cb2-9515-3e5efb407fe9",
+      "name": "Ergonomic Keyboard",
+      "amount": 200
+    },
+    {
+      "id": "b841fa6a-1e33-4d19-81aa-0025ecfa4c49",
+      "name": "4K Monitor",
+      "amount": 800
+    },
+    {
+      "id": "c9f3d57b-b7b9-41d4-8729-4863c3422a55",
+      "name": "Desk Lamp",
+      "amount": 35
+    },
+    {
+      "id": "81a71818-c2ae-4f8c-bd2e-bc9a3df65cf4",
+      "name": "Gaming Chair",
+      "amount": 129
+    },
+    {
+      "id": "fbc2f3e3-415e-4814-a693-8a8debfbc4c6",
+      "name": "External SSD",
+      "amount": 250
+    },
+    {
+      "id": "f0be178b-2bfa-4b3e-b91f-f3a087cb1be3",
+      "name": "Smartphone Holder",
+      "amount": 10
+    }
+  ]
+  
