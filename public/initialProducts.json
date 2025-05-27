@@ -1,53 +1,127 @@
 [
-    {
-      "id": "1e4d2a88-8c3e-4b1e-a3b7-68d0a1b27d98",
-      "name": "Wireless Mouse",
-      "amount": 20
-    },
-    {
-      "id": "b2f4e676-2b84-4e2a-bc8b-b1d3c7304b36",
-      "name": "Bluetooth Headphones",
-      "amount": 100
-    },
-    {
-      "id": "d7e5907a-3e34-4ac1-9879-94b999e3dc1f",
-      "name": "Laptop Stand",
-      "amount": 140
-    },
-    {
-      "id": "9b1c3f5f-43f4-44cb-9b69-294fa06e55a9",
-      "name": "USB-C Hub",
-      "amount": 30
-    },
-    {
-      "id": "67e6c271-54e1-4cb2-9515-3e5efb407fe9",
-      "name": "Ergonomic Keyboard",
-      "amount": 200
-    },
-    {
-      "id": "b841fa6a-1e33-4d19-81aa-0025ecfa4c49",
-      "name": "4K Monitor",
-      "amount": 800
-    },
-    {
-      "id": "c9f3d57b-b7b9-41d4-8729-4863c3422a55",
-      "name": "Desk Lamp",
-      "amount": 35
-    },
-    {
-      "id": "81a71818-c2ae-4f8c-bd2e-bc9a3df65cf4",
-      "name": "Gaming Chair",
-      "amount": 129
-    },
-    {
-      "id": "fbc2f3e3-415e-4814-a693-8a8debfbc4c6",
-      "name": "External SSD",
-      "amount": 250
-    },
-    {
-      "id": "f0be178b-2bfa-4b3e-b91f-f3a087cb1be3",
-      "name": "Smartphone Holder",
-      "amount": 10
-    }
-  ]
-  
+  {
+    "id": "1e4d2a88-8c3e-4b1e-a3b7-68d0a1b27d98",
+    "name": "Wireless Mouse",
+    "amount": 20
+  },
+  {
+    "id": "b2f4e676-2b84-4e2a-bc8b-b1d3c7304b36",
+    "name": "Bluetooth Headphones",
+    "amount": 100
+  },
+  {
+    "id": "d7e5907a-3e34-4ac1-9879-94b999e3dc1f",
+    "name": "Laptop Stand",
+    "amount": 140
+  },
+  {
+    "id": "9b1c3f5f-43f4-44cb-9b69-294fa06e55a9",
+    "name": "USB-C Hub",
+    "amount": 30
+  },
+  {
+    "id": "67e6c271-54e1-4cb2-9515-3e5efb407fe9",
+    "name": "Ergonomic Keyboard",
+    "amount": 200
+  },
+  {
+    "id": "b841fa6a-1e33-4d19-81aa-0025ecfa4c49",
+    "name": "4K Monitor",
+    "amount": 800
+  },
+  {
+    "id": "c9f3d57b-b7b9-41d4-8729-4863c3422a55",
+    "name": "Desk Lamp",
+    "amount": 35
+  },
+  {
+    "id": "81a71818-c2ae-4f8c-bd2e-bc9a3df65cf4",
+    "name": "Gaming Chair",
+    "amount": 129
+  },
+  {
+    "id": "fbc2f3e3-415e-4814-a693-8a8debfbc4c6",
+    "name": "External SSD",
+    "amount": 250
+  },
+  {
+    "id": "f0be178b-2bfa-4b3e-b91f-f3a087cb1be3",
+    "name": "Smartphone Holder",
+    "amount": 10
+  },
+  {
+    "id": "9c19ff2b-5035-4978-a14e-8731036d1d4c",
+    "name": "Wireless Charger",
+    "amount": 45
+  },
+  {
+    "id": "5a33126b-1a9c-4963-b80c-5a48aef6e517",
+    "name": "Mechanical Pencil",
+    "amount": 5
+  },
+  {
+    "id": "e9bcbe8b-d56b-48db-91be-f4501cfd0cb9",
+    "name": "Notebook",
+    "amount": 15
+  },
+  {
+    "id": "b48c5d57-34c2-4f60-91c1-96b5e01c0a5b",
+    "name": "Pen Set",
+    "amount": 12
+  },
+  {
+    "id": "cdb35b56-0f53-4f6a-b918-346b15510cd1",
+    "name": "Webcam",
+    "amount": 70
+  },
+  {
+    "id": "87f8b7c7-44a7-45ef-80b8-218cf6767e0d",
+    "name": "Monitor Arm",
+    "amount": 55
+  },
+  {
+    "id": "1dfec558-9c13-4af2-b0b0-297fa469c063",
+    "name": "Cable Organizer",
+    "amount": 8
+  },
+  {
+    "id": "b9d18a92-1f27-45b1-ae8f-6c3fd8ce9831",
+    "name": "Whiteboard",
+    "amount": 40
+  },
+  {
+    "id": "40fd437e-f4db-4411-94fd-bd16e6e3bc8c",
+    "name": "Desk Organizer",
+    "amount": 25
+  },
+  {
+    "id": "a3c8d907-d270-45c1-926e-30b0e8333245",
+    "name": "Sticky Notes",
+    "amount": 6
+  },
+  {
+    "id": "29f57962-15f4-4e2f-bec3-d78e7dcdbd64",
+    "name": "Portable Projector",
+    "amount": 300
+  },
+  {
+    "id": "e370e2d1-2cd1-4455-b1d7-c027d9a3d0a3",
+    "name": "Noise Cancelling Earplugs",
+    "amount": 18
+  },
+  {
+    "id": "e07c52bc-8cd1-4ef2-b3f0-908d2e16812f",
+    "name": "Smart Light Strip",
+    "amount": 50
+  },
+  {
+    "id": "9f265962-d31f-4b84-a872-d06ce3cb3e19",
+    "name": "Time Timer",
+    "amount": 35
+  },
+  {
+    "id": "342bcfd5-b82a-4ff7-9d25-ff002b1a6ff9",
+    "name": "Desk Mat",
+    "amount": 22
+  }
+]

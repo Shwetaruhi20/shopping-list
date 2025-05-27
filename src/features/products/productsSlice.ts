@@ -8,7 +8,10 @@ export const fetchInitialProducts = createAsyncThunk(
   'products/fetchInitialProducts',
   async () => {
     const response = await fetch('initialProducts.json');
-    const data: Product[] = await response.json();
+    let data: Product[] = await response.json();
+    const randomCount = Math.floor(Math.random() * (25 - 5 + 1)) + 5;
+    const shuffled = data.sort(() => 0.5 - Math.random());
+    data = shuffled.slice(0, randomCount);
     return data;
   }
 );

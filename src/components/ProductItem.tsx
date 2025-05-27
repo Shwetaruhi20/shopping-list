@@ -63,7 +63,12 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
             <input
               type="text"
               value={editedAmount}
-              onChange={(e) => setEditedAmount(e.target.value)}
+              onChange={(e) => {
+                const value = e.target.value;
+                if (/^\d*\.?\d*$/.test(value)) {
+                  setEditedAmount(value);
+                }
+              }}
               className={`${isEditing ? "productFormField" : ""}`}
             />
             {amountError && <div className="text-red-600 text-sm">{amountError}</div>}
