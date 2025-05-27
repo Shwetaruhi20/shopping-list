@@ -51,19 +51,18 @@ const ProductForm: React.FC<Props> = ({ initialProduct }) => {
 
   return (
     <form onSubmit={handleSubmit} className="formInputWrapper">
-      <div className="flex gap-4 items-start">
-        <div className="flex flex-col">
+      <div className="flex flex-col sm:flex-row gap-4 items-start">
+        <div className="flex flex-col w-full sm:w-auto">
           <input
             type="text"
             placeholder="Product Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="inputFieldName"
+            className="productFormField w-full sm:w-auto"
           />
           {nameError && <span className="text-red-600 text-sm">{nameError}</span>}
         </div>
-
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full sm:w-auto">
           <input
             type="text"
             placeholder="Amount (€)"
@@ -74,13 +73,15 @@ const ProductForm: React.FC<Props> = ({ initialProduct }) => {
                 setAmount(value);
               }
             }}
-            className="inputFieldName"
+            className="productFormField w-full sm:w-auto"
           />
           {amountError && <span className="text-red-600 text-sm">{amountError}</span>}
         </div>
-        <button type="submit" className="buttonSubmit">
-          {initialProduct ? 'Update' : 'Add'}
-        </button>
+        <div className="flex flex-col w-full sm:w-auto">
+          <button type="submit" className="actionButton w-full sm:w-auto">
+            {initialProduct ? 'Update' : 'Add'}
+          </button>
+        </div>
       </div>
     </form>
   );

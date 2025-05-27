@@ -49,7 +49,7 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
               type="text"
               value={editedName}
               onChange={(e) => setEditedName(e.target.value)}
-              className={`inputField ${isEditing ? "border border-blue-500" : ""}`}
+              className={`${isEditing ? "productFormField" : ""}`}
             />
             {nameError && <div className="text-red-600 text-sm">{nameError}</div>}
           </>
@@ -59,30 +59,30 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
       </td>
       <td className="tableData">
         {isEditing ? (
-          <>
+          <div>
             <input
               type="text"
               value={editedAmount}
               onChange={(e) => setEditedAmount(e.target.value)}
-              className={`inputField ${isEditing ? "border border-blue-500" : ""}`}
+              className={`${isEditing ? "productFormField" : ""}`}
             />
             {amountError && <div className="text-red-600 text-sm">{amountError}</div>}
-          </>
+          </div>
         ) : (
           <span>{product.amount}</span>
         )}
       </td>
       <td className="tableData">
-        <div className="flex gap-5">
+        <div className="flex justify-center space-x-5">
           {isEditing ? (
-            <>
+            <div className="flex justify-center space-x-5">
               <button className="actionButton" onClick={handleSave}>
                 Save
               </button>
               <button className="actionButton" onClick={handleCancel}>
                 Cancel
               </button>
-            </>
+            </div>
           ) : (
             <button className="actionButton" onClick={() => setIsEditing(true)}>
               Edit

@@ -11,12 +11,12 @@ const App: React.FC = () => (
       <div className="logo">
         <img src="/logo.png" height={30} alt="Logo" />
       </div>
-      <div className='headerContent'>
+      <div className='shopping-list-title'>
         Shopping List
       </div>
     </div>
     <ProductList />
-    <div className='headerContent'>
+    <div className='add-product-title'>
         Add New Products
     </div>
     <ProductForm />
