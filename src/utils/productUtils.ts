@@ -1,7 +1,7 @@
 import type { ValidationResult } from "../types";
 
-const NAME_REGEX = /^[A-Za-z0-9\s-_]+$/;
-const AMOUNT_REGEX = /^\d+(\.\d+)?$/;
+const NAME_REGEX = /^(?=.*[A-Za-z])[A-Za-z0-9\s-_]+$/;
+const AMOUNT_REGEX = /^\d*\.?\d{0,5}$/;
 
 const validateName = (value: string): ValidationResult => {
   const trimmed = value.trim();
@@ -9,7 +9,7 @@ const validateName = (value: string): ValidationResult => {
   if (!trimmed) {
     error = "Please enter a name";
   } else if (!NAME_REGEX.test(trimmed)) {
-    error = "Letters, numbers, and spaces only";
+    error = "Enter a valid name with atleast 1 letter, numbers, spaces, -, and _";
   } else if (trimmed.length < 3) {
     error = "Must be at least 3 characters";
   } else if (trimmed.length > 30) {
