@@ -5,39 +5,66 @@
 .root {
   @apply flex justify-center items-center w-full h-screen;
 }
+
 .appHeader {
-    @apply flex flex-row items-center w-4/5 h-[80px] mx-auto my-5;
-  }
-.logo{
-    @apply w-1/5 flex items-center justify-center my-10 mx-auto;
+  @apply flex flex-row items-center w-4/5 h-[80px] mx-auto my-5;
 }
+
+.logo {
+  @apply w-1/5 flex items-center justify-center my-10 mx-auto;
+}
+
 .shopping-list-title {
   @apply w-3/5 flex items-start justify-start text-3xl sm:text-5xl md:text-6xl lg:text-6xl my-10 mx-auto;
 }
-.add-product-title{
+
+.add-product-title {
   @apply text-center text-4xl mt-8 mb-4;
 }
+
 .tableContainer {
-    @apply w-4/5 my-10 mx-auto flex justify-center items-center;
-}  
+  @apply w-4/5 my-10 mx-auto flex justify-center items-center;
+}
+
 .productTable {
-     @apply border-collapse text-center w-4/5 shadow-md bg-white rounded-lg overflow-hidden;
-}  
-.tableHeader{
-    @apply bg-customGreen text-white border border-gray-300 p-3 w-1/3;
-}  
+  @apply border-collapse text-center w-4/5 shadow-md bg-white rounded-lg overflow-hidden;
+}
+
+.tableHeader {
+  @apply bg-customGreen text-white border border-gray-300 p-3 w-1/3;
+}
+
 .tableData {
-    @apply border border-gray-300 p-3 w-1/3;
-  }  
-.productButton{
+  @apply border border-gray-300 p-3 w-1/3;
+}
+
+.productButton {
   @apply bg-customGreen text-white py-1 px-1 rounded;
 }
+
 .formInputWrapper {
   @apply max-w-md mx-auto p-4 flex flex-col rounded space-y-4 pb-20;
 }
+
 .productFormField {
   @apply border px-3 py-2 rounded placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500;
 }
+.addProductFormField {
+   @apply border px-3 py-2 rounded placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full sm:w-auto;
+}
+
 .actionButton {
-  @apply bg-customGreen text-white py-2 px-4 rounded; 
+  @apply bg-customGreen text-white py-2 px-4 rounded;
+}
+
+.formContainer {
+  @apply flex flex-col sm:flex-row gap-4 items-start;
+}
+
+.inputField {
+  @apply flex flex-col w-full sm:w-auto;
+}
+
+.buttonContainer {
+  @apply flex justify-center space-x-5;
 }

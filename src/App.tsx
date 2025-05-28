@@ -17,7 +17,7 @@ const App: React.FC = () => (
     </div>
     <ProductList />
     <div className='add-product-title'>
-        Add New Products
+      Add New Products
     </div>
     <ProductForm />
   </Provider>

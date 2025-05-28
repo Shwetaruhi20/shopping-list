@@ -32,7 +32,10 @@ const checkDuplicates = (name: string, products: { name: string }[]): boolean =>
 };
 
 const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>, setName: (value: string) => void) => {
-  setName(e.target.value);
+  const value = e.target.value;
+  if (NAME_REGEX.test(value)) {
+    setName(value);
+  }
 };
 
 const handleAmountChange = (e: React.ChangeEvent<HTMLInputElement>, setAmount: (value: string) => void) => {
