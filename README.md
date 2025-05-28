@@ -12,7 +12,7 @@ There are two options to run the application: with *Docker* and *without Docker*
 ### Docker 
 Build the Docker Image
 ```
-docker build -t 
+docker build -t shopping-list .
 ```
 
 Run the Container 
