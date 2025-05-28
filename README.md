@@ -2,6 +2,11 @@
 
 Shopping List is a simple web application built primarily with `React`, `TypeScript`, `Redux`, and `Tailwind CSS`. It allows users to manage a shopping list by adding, editing, and removing products. The app initializes with randomly generated items loaded from a JSON file and is designed primarily for desktop browsers.
 
+## Live Demo
+You can access the live version of the application here: [https://shopping-list-8559.onrender.com](https://shopping-list-8559.onrender.com)
+
+*Note: As the app is hosted on a free Render.com plan, it may take a few seconds to load initially.*
+
 ## Technologies Used:
 - [**Vite**](https://vitejs.dev/): Provides a fast and modern development environment with instant hot module replacement and optimized builds.
 - [**React**](https://reactjs.org/) + [**TypeScript**](https://www.typescriptlang.org/): React is a powerful UI library, and TypeScript adds type safety and better tooling support, making the codebase more robust and maintainable.
