@@ -14,6 +14,27 @@ You can access the live version of the application here: [https://shopping-list-
 - [**Tailwind CSS**](https://tailwindcss.com/): A utility-first CSS framework that speeds up styling with less code and responsive design utilities and ensures a consistent UI without writing custom CSS.
 - [**Jest**](https://jestjs.io/): A testing framework used to write unit tests and ensure that core functionality works as expected.
 
+## Project File Structure
+Here is an overview of the *key* files and folders in this project:
+
+/src
+├── /components
+│ └── Contains React components that define UI elements of the application *i.e.* *ProductForm*, *ProductList*, and *ProductItem*.
+├── /features/products/productsSlice.ts
+│ └── Defines the products slice with actions to add, update, remove products, and an async thunk to fetch initial products.
+├── store/store.ts
+│ └── Configures and exports the Redux store with the products slice and provides TypeScript types for state and dispatch.
+├── /tests
+│ └── Contains unit tests.
+├── /utils
+│ └── Contains utility functions for the application.
+├── style.css
+│ └── Contains Tailwind CSS utility classes and custom styles.
+├── types.ts
+│ └── Defines TypeScript interfaces and types for products, form states, actions, and validation.
+Dockerfile
+  └── Defines the Docker image setup to containerize the app.
+
 ## Features
 Users can add new products by specifying both a name and an amount, with built-in validation to prevent empty or invalid inputs. Existing items can be edited directly within the list, allowing quick adjustments. Products can be removed with a single click—no confirmation dialog. To simulate a starting point, the app automatically generates a random list of items on each launch from a predefined JSON file. All data is managed in-memory using Redux, and changes are not persisted across sessions. 
 
