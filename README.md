@@ -11,8 +11,8 @@ You can access the live version of the application here: [https://shopping-list-
 - [**Vite**](https://vitejs.dev/): Provides a fast and modern development environment with instant hot module replacement and optimized builds.
 - [**React**](https://reactjs.org/) + [**TypeScript**](https://www.typescriptlang.org/): React is a powerful UI library, and TypeScript adds type safety and better tooling support, making the codebase more robust and maintainable.
 - [**Redux**](https://redux.js.org/): Enables predictable state management, making it easier to handle updates across components and scale the app logic cleanly.
-- [**Tailwind CSS**](https://tailwindcss.com/): A utility-first CSS framework that speeds up styling with responsive design utilities and ensures a consistent UI without writing custom CSS.
-- [**Jest**](https://jestjs.io/): A testing framework used to write reliable unit tests and ensure that core functionality works as expected.
+- [**Tailwind CSS**](https://tailwindcss.com/): A utility-first CSS framework that speeds up styling with less code and responsive design utilities and ensures a consistent UI without writing custom CSS.
+- [**Jest**](https://jestjs.io/): A testing framework used to write unit tests and ensure that core functionality works as expected.
 
 ## Features
 Users can add new products by specifying both a name and an amount, with built-in validation to prevent empty or invalid inputs. Existing items can be edited directly within the list, allowing quick adjustments. Products can be removed with a single click—no confirmation dialog. To simulate a starting point, the app automatically generates a random list of items on each launch from a predefined JSON file. All data is managed in-memory using Redux, and changes are not persisted across sessions. 
