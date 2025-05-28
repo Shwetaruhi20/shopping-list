@@ -2,12 +2,17 @@
 
 Shopping List is a simple web application built primarily with `React`, `TypeScript`, `Redux`, and `Tailwind CSS`. It allows users to manage a shopping list by adding, editing, and removing products. The app initializes with randomly generated items loaded from a JSON file and is designed primarily for desktop browsers.
 
+## Live Demo
+You can access the live version of the application here: [https://shopping-list-8559.onrender.com](https://shopping-list-8559.onrender.com)
+
+*Note: As the app is hosted on a free Render.com plan, it may take a few seconds to load initially.*
+
 ## Technologies Used:
 - [**Vite**](https://vitejs.dev/): Provides a fast and modern development environment with instant hot module replacement and optimized builds.
 - [**React**](https://reactjs.org/) + [**TypeScript**](https://www.typescriptlang.org/): React is a powerful UI library, and TypeScript adds type safety and better tooling support, making the codebase more robust and maintainable.
 - [**Redux**](https://redux.js.org/): Enables predictable state management, making it easier to handle updates across components and scale the app logic cleanly.
-- [**Tailwind CSS**](https://tailwindcss.com/): A utility-first CSS framework that speeds up styling with responsive design utilities and ensures a consistent UI without writing custom CSS.
-- [**Jest**](https://jestjs.io/): A testing framework used to write reliable unit tests and ensure that core functionality works as expected.
+- [**Tailwind CSS**](https://tailwindcss.com/): A utility-first CSS framework that speeds up styling with less code and responsive design utilities and ensures a consistent UI without writing custom CSS.
+- [**Jest**](https://jestjs.io/): A testing framework used to write unit tests and ensure that core functionality works as expected.
 
 ## Features
 Users can add new products by specifying both a name and an amount, with built-in validation to prevent empty or invalid inputs. Existing items can be edited directly within the list, allowing quick adjustments. Products can be removed with a single click—no confirmation dialog. To simulate a starting point, the app automatically generates a random list of items on each launch from a predefined JSON file. All data is managed in-memory using Redux, and changes are not persisted across sessions. 
@@ -20,7 +25,7 @@ The application enforces the following validation rules on product name and amou
 
 ## Initial Product Generation
 
-At application startup, the shopping list is initialized with *5 to 25* random products. These products are selected from a static `initialProducts.json` file located in the `public/` directory.
+At application startup, the shopping list is initialized with *5 to 15* random products. These products are selected from a static `initialProducts.json` file located in the `public/` directory.
 
 The generation logic:
 - Loads all available products from the JSON file
