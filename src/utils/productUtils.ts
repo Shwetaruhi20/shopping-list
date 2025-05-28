@@ -4,11 +4,11 @@ import { NAME_REGEX, AMOUNT_REGEX, ERROR_MESSAGES } from "./validationConstants"
 const validateName = (value: string): ValidationResult => {
   const trimmed = value.trim();
   if (!trimmed) {
-     return [false, ERROR_MESSAGES.nameRequired];
+    return [false, ERROR_MESSAGES.nameRequired];
   } else if (!NAME_REGEX.test(trimmed)) {
-    return [false, ERROR_MESSAGES.nameInvalid];   
+    return [false, ERROR_MESSAGES.nameInvalid];
   } else if (trimmed.length < 3) {
-     return [false, ERROR_MESSAGES.nameTooShort];
+    return [false, ERROR_MESSAGES.nameTooShort];
   } else if (trimmed.length > 30) {
     return [false, ERROR_MESSAGES.nameTooLong];
   }

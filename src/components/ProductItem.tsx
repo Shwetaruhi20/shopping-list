@@ -2,8 +2,8 @@ import React, { useReducer } from "react";
 import { useAppDispatch } from "../hooks";
 import { removeProduct, updateProduct } from "../features/products/productsSlice";
 import "../style.css";
-import type { ProductItemProps, ProductState, EditProductAction} from "../types";
-import { validateName, validateAmount, handleNameChange, handleAmountChange} from "../utils/productUtils";
+import type { ProductItemProps, ProductState, EditProductAction } from "../types";
+import { validateName, validateAmount, handleNameChange, handleAmountChange } from "../utils/productUtils";
 
 const reducer = (state: ProductState, action: EditProductAction): ProductState => {
   switch (action.type) {

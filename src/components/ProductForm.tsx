@@ -2,8 +2,8 @@ import React, { useEffect, useReducer } from 'react';
 import { useAppDispatch, useAppSelector } from '../hooks';
 import { addProduct, updateProduct } from '../features/products/productsSlice';
 import '../style.css';
-import type { Props, Product,FormState, addProductAction } from '../types';
-import { validateName, validateAmount, checkDuplicates, handleAmountChange, handleNameChange} from '../utils/productUtils';
+import type { Props, Product, FormState, addProductAction } from '../types';
+import { validateName, validateAmount, checkDuplicates, handleAmountChange, handleNameChange } from '../utils/productUtils';
 import type { RootState } from '../store/store';
 
 const initialState: FormState = {

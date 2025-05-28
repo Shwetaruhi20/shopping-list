@@ -49,8 +49,9 @@
 .productFormField {
   @apply border px-3 py-2 rounded placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500;
 }
+
 .addProductFormField {
-   @apply border px-3 py-2 rounded placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full sm:w-auto;
+  @apply border px-3 py-2 rounded placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full sm:w-auto;
 }
 
 .actionButton {

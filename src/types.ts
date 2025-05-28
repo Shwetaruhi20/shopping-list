@@ -1,15 +1,15 @@
 export interface Product {
-    id: string;
-    name: string;
-    amount: number;
-  }
+  id: string;
+  name: string;
+  amount: number;
+}
 export interface Props {
   initialProduct?: Product | null;
 }
 
 export interface ProductItemProps {
-    product: Product;
-  }
+  product: Product;
+}
 export type FormState = {
   name: string;
   amount: string;
