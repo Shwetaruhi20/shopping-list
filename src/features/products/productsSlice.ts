@@ -6,7 +6,7 @@ const initialState: Product[] = [];
 
 export const fetchInitialProducts = createAsyncThunk(
   'products/fetchInitialProducts',
-  async () => {
+  async (): Promise<Product[]> => {
     const response = await fetch('initialProducts.json');
     let data: Product[] = await response.json();
     const randomCount = Math.floor(Math.random() * (25 - 5 + 1)) + 5;
@@ -27,7 +27,8 @@ const productsSlice = createSlice({
       if (index !== -1) state[index] = action.payload;
     },
     removeProduct(state, action: PayloadAction<string>) {
-      return state.filter(product => product.id !== action.payload);
+      const index = state.findIndex(product => product.id === action.payload);
+      if (index !== -1) state.splice(index, 1);
     },
   },
   extraReducers: builder => {
