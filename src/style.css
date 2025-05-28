@@ -5,7 +5,6 @@
 .root {
   @apply flex justify-center items-center w-full h-screen;
 }
-
 .appHeader {
     @apply flex flex-row items-center w-4/5 h-[80px] mx-auto my-5;
   }
@@ -39,7 +38,6 @@
 .productFormField {
   @apply border px-3 py-2 rounded placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500;
 }
-
 .actionButton {
   @apply bg-customGreen text-white py-2 px-4 rounded; 
 }

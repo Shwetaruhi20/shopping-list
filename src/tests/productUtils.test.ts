@@ -55,6 +55,12 @@ test('should return false for amount greater than 10000', () => {
   expect(error).toBe('Amount must be less than 10,000');
 });
 
+test('should return false for amount with more than 5 decimal places', () => {
+  const [isValid, error] = validateAmount('12.123456'); 
+  expect(isValid).toBe(false);
+  expect(error).toBe('Invalid amount. Please enter a valid amount.'); 
+});
+  
 test('should return true for duplicate product name', () => {
   const products = [{id: "1", name: 'Product A', amount: 10 }, {id: "3", name: 'Product B', amount: 24 }];
   const isDuplicate = checkDuplicates('Product A', products);
