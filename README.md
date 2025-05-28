@@ -25,7 +25,7 @@ The application enforces the following validation rules on product name and amou
 
 ## Initial Product Generation
 
-At application startup, the shopping list is initialized with *5 to 25* random products. These products are selected from a static `initialProducts.json` file located in the `public/` directory.
+At application startup, the shopping list is initialized with *5 to 15* random products. These products are selected from a static `initialProducts.json` file located in the `public/` directory.
 
 The generation logic:
 - Loads all available products from the JSON file
