@@ -1,6 +1,6 @@
 import type { ValidationResult } from "../types";
 
-const NAME_REGEX = /^[A-Za-z0-9\s]+$/;
+const NAME_REGEX = /^[A-Za-z0-9\s-_]+$/;
 const AMOUNT_REGEX = /^\d+(\.\d+)?$/;
 
 const validateName = (value: string): ValidationResult => {
