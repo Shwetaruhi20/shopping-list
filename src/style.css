@@ -14,12 +14,12 @@
   @apply w-1/5 flex items-center justify-center my-10 mx-auto;
 }
 
-.shopping-list-title {
+.shoppingListTitle {
   @apply w-3/5 flex items-start justify-start text-3xl sm:text-5xl md:text-6xl lg:text-6xl my-10 mx-auto;
 }
 
-.add-product-title {
-  @apply text-center text-4xl mt-8 mb-4;
+.addProductTitle {
+  @apply text-center text-5xl mt-8 mb-4;
 }
 
 .tableContainer {
@@ -27,43 +27,27 @@
 }
 
 .productTable {
-  @apply border-collapse text-center w-4/5 shadow-md bg-white rounded-lg overflow-hidden;
+  @apply table-auto text-center w-4/5 shadow-md bg-white rounded-lg overflow-hidden mb-10;
 }
 
 .tableHeader {
-  @apply bg-customGreen text-white border border-gray-300 p-3 w-1/3;
+  @apply bg-customGreen text-white border-b border-gray-300 p-3;
 }
 
 .tableData {
-  @apply border border-gray-300 p-3 w-1/3;
-}
-
-.productButton {
-  @apply bg-customGreen text-white py-1 px-1 rounded;
-}
-
-.formInputWrapper {
-  @apply max-w-md mx-auto p-4 flex flex-col rounded space-y-4 pb-20;
+  @apply border-b border-gray-300 p-3;
 }
 
 .productFormField {
-  @apply border px-3 py-2 rounded placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500;
+  @apply border px-3 py-2 rounded w-full placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500;
 }
 
 .addProductFormField {
-  @apply border px-3 py-2 rounded placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full sm:w-auto;
+  @apply border px-3 py-2 w-full rounded placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500;
 }
 
 .actionButton {
   @apply bg-customGreen text-white py-2 px-4 rounded;
-}
-
-.formContainer {
-  @apply flex flex-col sm:flex-row gap-4 items-start;
-}
-
-.inputField {
-  @apply flex flex-col w-full sm:w-auto;
 }
 
 .buttonContainer {

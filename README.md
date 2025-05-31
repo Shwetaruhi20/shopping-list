@@ -92,6 +92,10 @@ npm run test
 ```
 The tests can be found in `src/tests/`.
 
+## Changelog
+
+**[31/05/2025]** — Minor UI updates and refractoring
+
 ## Contact
 For details, feel free to contact me:
 [Shweta Kumari](mailto:shwetaruhi0@gmail.com)

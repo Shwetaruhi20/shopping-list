@@ -19,9 +19,9 @@ const ProductList: React.FC = () => {
         <table className='productTable'>
           <thead>
             <tr>
-              <th className='tableHeader'>Name</th>
-              <th className='tableHeader'>Amount (€)</th>
-              <th className='tableHeader'>Actions</th>
+              <th className='tableHeader w-1/2'>Name</th>
+              <th className='tableHeader w-1/4'>Amount (€)</th>
+              <th className='tableHeader w-1/4'>Actions</th>
             </tr>
           </thead>
           <tbody>
